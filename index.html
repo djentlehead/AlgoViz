@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Sorting Algorithm Visualizer</h1>
+
+  <div class="controls">
+    <label for="speedSlider"><b>Speed:</b></label>
+    <input type="range" id="speedSlider" min="1" max="100" value="50">
+    <span id="speedValue">50</span>
+  </div>
+
+  <div class="algo-buttons">
+    <button id="bubbleBtn" class="selected">Bubble Sort</button>
+    <button id="insertionBtn">Insertion Sort</button>
+    <button id="selectionBtn">Selection Sort</button>
+    <button id="mergeBtn">Merge Sort</button>
+    <button id="quickBtn">Quick Sort</button>
+  </div>
+
+  <div class="action-buttons">
+    <button id="sortBtn">Sort</button>
+    <button id="randomBtn">Randomize</button>
+  </div>
+
+
+  <canvas id="canvas" width="900" height="500"></canvas>
+    <div id="algoDescription" style="max-width:900px; margin: 0 auto 20px; font-size: 16px; color: #444; min-height: 60px; padding: 10px; border-radius: 6px; background: #e5f0fb; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"></div>
+
+
+  <script src="visualizer.js"></script>
+</body>
+</html>

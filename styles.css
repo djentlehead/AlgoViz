@@ -1,0 +1,94 @@
+:root {
+  --primary: #0078d7;
+  --secondary: #e5f0fb;
+  --accent: #ffffff;
+  --hover: #005fa3;
+  --success: #1abc9c;
+  --danger: #e74c3c;
+  --font: 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  background: #ffffff;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin: 20px 0 10px;
+  font-size: 2rem;
+  
+  color: var(--primary);
+}
+
+canvas {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.controls, .algo-buttons, .action-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.controls label {
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+input[type="range"] {
+  width: 200px;
+}
+
+button {
+  padding: 10px 18px;
+  font-size: 14px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: var(--hover);
+  transform: translateY(-1px);
+}
+
+button.selected {
+  background: var(--success);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+p {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  canvas {
+    width: 95%;
+  }
+
+  .controls, .algo-buttons, .action-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
