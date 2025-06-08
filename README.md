@@ -19,6 +19,10 @@ An interactive web application to visualize popular sorting algorithms in real-t
 - Merge Sort
 - Quick Sort
 
+![Screenshot 2025-06-08 185244](https://github.com/user-attachments/assets/4fbe2b80-ee25-4321-87d6-7a9ab54dd5f0)
+
+
+
 ## 🚀 Getting Started
 
 ### 1. Clone the repository
